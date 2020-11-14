@@ -1,0 +1,20 @@
+.teacher-sidebar {
+  width: 23%;
+  box-shadow: 5px 5px 10px silver;
+  padding-bottom: 230px;
+}
+.grid-icon {
+  width: 21px;
+  height: 21px;
+  margin-left: 30px;
+}
+.assignment-sec {
+  padding-right: 30px;
+  margin-top: 3px;
+}
+.sidebar-section {
+  padding-top: 20px;
+}
+.assignment-name:hover {
+  color: #ff8a00;
+}

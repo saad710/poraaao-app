@@ -1,0 +1,35 @@
+.teacher-content {
+  width: 75%;
+}
+.bid-assignment {
+  margin-left: 50px;
+  margin-top: 20px;
+  height: 140px;
+  box-shadow: 5px 10px 20px silver;
+}
+.pie-chart-section {
+  width: 85%;
+  height: 290px;
+  margin-left: 60px;
+  margin-top: 50px;
+  box-shadow: 10px 10px 20px silver;
+}
+.math-assignment {
+  max-height: 100%;
+  width: 450px;
+  margin-top: 30px;
+  margin-left: 20px;
+  background-color: #e2dfdf;
+}
+.Pie-chart {
+  padding-left: 140px;
+}
+.line-chart-section {
+  margin-top: 60px;
+  margin-left: 80px;
+}
+.bar-chart {
+  width: 90%;
+  height: 100%;
+  box-shadow: 10px 10px 20px silver;
+}

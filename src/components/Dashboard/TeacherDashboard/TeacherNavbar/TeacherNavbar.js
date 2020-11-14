@@ -1,13 +1,17 @@
 import React from "react";
-import logo from "../../../resources/porao-logo.png";
-import "./NavBar.css";
-import grid from "../../../resources/grid.png";
-import cart from "../../../resources/Add to cart.png";
+import logo from "../../../../resources/porao-logo.png";
+import "../../../Shared/NavBar/NavBar.css";
+import grid from "../../../../resources/grid.png";
+import cart from "../../../../resources/Add to cart.png";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
+import NotificationsNoneOutlinedIcon from "@material-ui/icons/NotificationsNoneOutlined";
+import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import "./TeacherNavbar.css";
 
-const NavBar = () => {
+const TeacherNavbar = () => {
   return (
     <div className="header-nav">
       <Navbar className="header" bg="light" expand="lg">
@@ -18,7 +22,7 @@ const NavBar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className="mr-auto nav-section">
             <Nav.Link href="#">
               <img className="grid-image" src={grid} alt="" />
             </Nav.Link>
@@ -60,22 +64,22 @@ const NavBar = () => {
           </Nav>
           <div className="row right-header">
             <div className="header-end">
-              <img className="cart-image" src={cart} alt="" />
+              <NotificationsNoneOutlinedIcon
+                className="notification-icon"
+                style={{ color: "#ff8a00" }}
+              />
             </div>
             <div className="header-end">
-              <Link className="btn-header" to="/signUpHome">
-                Sign Up
-              </Link>
+              <ShoppingCartOutlinedIcon
+                className="cart-icon"
+                style={{ color: "#ff8a00" }}
+              />
             </div>
             <div className="header-end">
-              <Link className="btn-header" to="/login">
-                Login
-              </Link>
-            </div>
-            <div className="header-end">
-              <Link className="btn-header" to="/teacherDashboard">
-                Dashboard
-              </Link>
+              <AccountCircleIcon
+                className="profile-icon"
+                style={{ color: "#ff8a00" }}
+              />
             </div>
           </div>
         </Navbar.Collapse>
@@ -84,4 +88,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default TeacherNavbar;

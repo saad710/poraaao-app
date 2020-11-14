@@ -1,4 +1,5 @@
 import React from "react";
+import Select from "react-select";
 import logo from "../../../../resources/porao-logo.png";
 import image from "../../../../resources/undraw_dev_focus_b9xo 1.png";
 import { FcGoogle } from "react-icons/fc";
@@ -7,6 +8,14 @@ import { Link } from "react-router-dom";
 import "./TeacherSignUp.css";
 
 const TeacherSignUp = () => {
+  const options = [
+    { value: "bangla", label: "Bangla" },
+    { value: "english", label: "English" },
+    { value: "math", label: "Math" },
+    { value: "physics", label: "Physics" },
+    { value: "chemistry", label: "Chemistry" },
+    { value: "biology", label: "Biology" },
+  ];
   return (
     <div className="teacher-sign-up">
       <Link to="/home">
@@ -55,7 +64,16 @@ const TeacherSignUp = () => {
                   required
                 />{" "}
                 <br />
-                <select
+                <Select
+                  defaultValue={[]}
+                  placeholder="Choose Your Subject"
+                  isMulti
+                  name="subject"
+                  options={options}
+                  className="basic-multi-select"
+                  classNamePrefix="select"
+                />
+                {/* <select
                   id="inputState"
                   name="Choose Your Subject"
                   class="form-control form-hw"
@@ -67,7 +85,7 @@ const TeacherSignUp = () => {
                   <option>Physics</option>
                   <option>Chemestry</option>
                   <option>Biology</option>
-                </select>{" "}
+                </select>{" "} */}
                 <br />
                 <Link to="/verifyOtp">
                   <input
