@@ -8,6 +8,7 @@ import { ProgressBar } from "react-bootstrap";
 import TeacherNavbar from "../TeacherNavbar/TeacherNavbar";
 import TeacherSidebar from "../TeacherSidebar/TeacherSidebar";
 import img from "../../../../resources/Ellipse 89.png";
+import Footer from "../../../Shared/Footer/Footer";
 
 const TeacherReviews = () => {
   const [reviews, setReviews] = useState(fakeReviews);
@@ -18,7 +19,10 @@ const TeacherReviews = () => {
       <TeacherNavbar></TeacherNavbar>
       <div className="container-fluid row">
         <TeacherSidebar></TeacherSidebar>
-        <div className="shadow-sm" style={{ width: "75%", padding: 60 }}>
+        <div
+          className="col-md-10  ml-auto shadow-sm ml-auto"
+          style={{ padding: 60 }}
+        >
           <h1>Ratings & Reviews</h1>
           <div className="pt-5 pb-5">
             <div className="row">
@@ -84,6 +88,9 @@ const TeacherReviews = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div style={{ backgroundColor: "#212121" }}>
+        <Footer></Footer>
       </div>
     </div>
   );
