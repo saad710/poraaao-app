@@ -1,4 +1,4 @@
-.teacher-sidebar {
+/* .teacher-sidebar {
   width: 23%;
   box-shadow: 5px 5px 10px silver;
   padding-bottom: 230px;
@@ -15,6 +15,30 @@
 .sidebar-section {
   padding-top: 20px;
 }
-.assignment-name:hover {
+link:hover {
   color: #ff8a00;
+} */
+a {
+  color: #000000 !important;
+}
+a:hover {
+  color: #ff8a00 !important;
+}
+a:active {
+  color: #ff8a00 !important;
+}
+.sidebar {
+  background-color: #ffffff;
+  position: fixed;
+  height: 100vh !important;
+}
+.sidebar li {
+  margin-bottom: 2em;
+}
+.sidebar li:hover span {
+  display: inline-block;
+  transform: translate(5px);
+}
+.sidebar svg {
+  margin-right: 5px;
 }

@@ -5,6 +5,8 @@ import TeacherLogin from "./components/Authentication/Teacher/TeacherLogin/Teach
 import TeacherSignUp from "./components/Authentication/Teacher/TeacherSignUp/TeacherSignUp";
 import VerifyOtp from "./components/Authentication/VerifyOtp/VerifyOtp";
 import TeacherDashboard from "./components/Dashboard/TeacherDashboard/TeacherDashboard/TeacherDashboard";
+import TeacherEarning from "./components/Dashboard/TeacherDashboard/TeacherEarning/TeacherEarning";
+import TeacherReviews from "./components/Dashboard/TeacherDashboard/TeacherReviews/TeacherReviews";
 import Home from "./components/Home/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 
@@ -32,6 +34,12 @@ function App() {
         </Route>
         <Route path="/teacherDashboard">
           <TeacherDashboard></TeacherDashboard>
+        </Route>
+        <Route path="/teacherReview">
+          <TeacherReviews></TeacherReviews>
+        </Route>
+        <Route path="/teacherEarning">
+          <TeacherEarning></TeacherEarning>
         </Route>
         <Route path="/verifyOtp">
           <VerifyOtp></VerifyOtp>
