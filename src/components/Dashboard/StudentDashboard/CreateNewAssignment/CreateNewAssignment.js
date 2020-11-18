@@ -1,21 +1,23 @@
 import React from "react";
 import Footer from "../../../Shared/Footer/Footer";
-import TeacherEarningContent from "../TeacherEarningContent/TeacherEarningContent";
 import TeacherNavbar from "../../Shared/TeacherNavbar/TeacherNavbar";
-import TeacherSidebar from "../TeacherSidebar/TeacherSidebar";
+import NewAssignmentContent from "../NewAssignmentContent/NewAssignmentContent";
+import StudentSidebar from "../StudentSidebar/StudentSidebar";
+import "./CreateNewAssignment.css";
 
-const TeacherEarning = () => {
+const CreateNewAssignment = () => {
   const containerStyle = {
     backgroundColor: "#F4F7FC",
     border: "none",
+    overflow: "hidden",
   };
   return (
     <>
       <TeacherNavbar></TeacherNavbar>
       <div style={containerStyle} className="container-fluid row">
-        <TeacherSidebar></TeacherSidebar>
-        <div className="col-md-10 p-4 pr-5 ml-auto">
-          <TeacherEarningContent></TeacherEarningContent>
+        <StudentSidebar></StudentSidebar>
+        <div className="col-md-10 p-4 ml-auto">
+          <NewAssignmentContent></NewAssignmentContent>
         </div>
       </div>
       <div style={{ backgroundColor: "#212121" }}>
@@ -25,4 +27,4 @@ const TeacherEarning = () => {
   );
 };
 
-export default TeacherEarning;
+export default CreateNewAssignment;

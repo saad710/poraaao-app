@@ -5,7 +5,7 @@ import Rating from "@material-ui/lab/Rating";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import { ProgressBar } from "react-bootstrap";
-import TeacherNavbar from "../TeacherNavbar/TeacherNavbar";
+import TeacherNavbar from "../../Shared/TeacherNavbar/TeacherNavbar";
 import TeacherSidebar from "../TeacherSidebar/TeacherSidebar";
 import img from "../../../../resources/Ellipse 89.png";
 import Footer from "../../../Shared/Footer/Footer";

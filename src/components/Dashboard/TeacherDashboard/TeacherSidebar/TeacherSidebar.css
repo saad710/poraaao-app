@@ -29,7 +29,7 @@ a:active {
 }
 .sidebar {
   background-color: #ffffff;
-  position: fixed;
+  /* position: fixed; */
   height: 100vh !important;
 }
 .sidebar li {

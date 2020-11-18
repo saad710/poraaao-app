@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../../Shared/Footer/Footer";
 import TeacherContent from "../TeacherContent/TeacherContent";
-import TeacherNavbar from "../TeacherNavbar/TeacherNavbar";
+import TeacherNavbar from "../../Shared/TeacherNavbar/TeacherNavbar";
 import TeacherSidebar from "../TeacherSidebar/TeacherSidebar";
 
 const TeacherDashboard = () => {
