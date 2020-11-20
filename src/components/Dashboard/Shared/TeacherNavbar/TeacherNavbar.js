@@ -62,20 +62,22 @@ const TeacherNavbar = () => {
               />
             </div>
           </Nav>
-          <div className="row right-header">
-            <div className="header-end">
+          <div className="row d-flex justify-content-around ">
+            <div className="col">
               <NotificationsNoneOutlinedIcon
                 className="notification-icon"
                 style={{ color: "#ff8a00" }}
               />
             </div>
-            <div className="header-end">
+
+            <div className="col">
               <ShoppingCartOutlinedIcon
                 className="cart-icon"
                 style={{ color: "#ff8a00" }}
               />
             </div>
-            <div className="header-end">
+
+            <div className="col">
               <AccountCircleIcon
                 className="profile-icon"
                 style={{ color: "#ff8a00" }}

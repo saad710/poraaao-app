@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import uploadIcon from "../../../../resources/upload.png";
+import "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css";
+import RangeSlider from "react-bootstrap-range-slider";
 import "./NewAssignmentContent.css";
 
 const NewAssignmentContent = () => {
+  const [value, setValue] = useState(0);
   return (
     <>
       <div className="assignment-form shadow">
@@ -138,7 +141,7 @@ const NewAssignmentContent = () => {
           </div>
 
           <div class="form-group col-md-3">
-            <label className="form-label font-weight-bold" for="timeDuration">
+            {/* <label className="form-label font-weight-bold" for="timeDuration">
               Time Duration (in Hours)
             </label>
             <div class="input-group mb-3">
@@ -149,7 +152,28 @@ const NewAssignmentContent = () => {
                 aria-label="Time Duration"
                 aria-describedby="basic-addon2"
               />
-            </div>
+            </div> */}
+            <label className=" mt-3" for="customRange3">
+              <span className="form-label font-weight-bold">
+                Time Duration{" "}
+              </span>
+              (in hour)
+            </label>
+            {/* <input
+              type="range"
+              class="custom-range"
+              min="0"
+              max="5"
+              step="0.5"
+              value={value}
+              onChange={(changeEvent) => setValue(changeEvent.target.value)}
+              id="customRange3"
+            /> */}
+            <RangeSlider
+              variant="warning"
+              value={value}
+              onChange={(changeEvent) => setValue(changeEvent.target.value)}
+            />
           </div>
           <div class="form-group row">
             <div className="form-label font-weight-bold col-md-1 ml-3">
