@@ -1,0 +1,58 @@
+#uploadImageText {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #009444;
+  background: #deffed;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 7px 0px;
+  /* height: 193px; */
+  width: 303px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.uploadFile {
+  position: relative;
+}
+
+.uploadIcon {
+  width: 1.5rem;
+  margin-right: 10px;
+}
+
+.custom-file-input {
+  color: transparent;
+  outline-width: 0;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.form-label {
+  font-size: 18px;
+  font-weight: 900px !important;
+}
+
+.form-group {
+  margin-bottom: 20px !important;
+}
+
+.assignment-btn {
+  background-color: #ff8a00 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 10px;
+  padding: 10px !important;
+}
+
+.assignment-form {
+  margin: 20px;
+  padding: 50px !important;
+  background-color: white !important;
+}

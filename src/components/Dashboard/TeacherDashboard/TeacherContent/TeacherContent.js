@@ -142,12 +142,16 @@ const data = [{ name: "Group A", value: 400 }];
 const COLORS = ["#ff8a00"];
 
 const TeacherContent = () => {
+  const containerStyle = {
+    backgroundColor: "#F4F7FC",
+    border: "none",
+  };
   return (
     <div className="teacher-content">
       <div className="assignment-section" style={{ marginLeft: "30px" }}>
         <div className="row">
           <div
-            className="col-md-3 bid-assignment"
+            className="col-md-3 bid-assignment bg-white shadow"
             style={{ display: "flex", alignItems: "center" }}
           >
             <img src={book} alt="" />
@@ -159,7 +163,7 @@ const TeacherContent = () => {
             </div>
           </div>
           <div
-            className="col-md-3 bid-assignment"
+            className="col-md-3 bid-assignment bg-white shadow"
             style={{ display: "flex", alignItems: "center" }}
           >
             <img src={check} alt="" />
@@ -171,7 +175,7 @@ const TeacherContent = () => {
             </div>
           </div>
           <div
-            className="col-md-3 bid-assignment"
+            className="col-md-3 bid-assignment bg-white shadow"
             style={{ display: "flex", alignItems: "center" }}
           >
             <img src={star} style={{ height: "65px", width: "65px" }} alt="" />
@@ -182,9 +186,9 @@ const TeacherContent = () => {
           </div>
         </div>
       </div>
-      <div className="pie-chart-section" style={{}}>
+      <div className="pie-chart-section bg-white shadow" style={{}}>
         <div className="row">
-          <div className="col-md-5">
+          <div className="col-md-5 ">
             <p
               style={{
                 fontSize: "20px",
@@ -195,7 +199,7 @@ const TeacherContent = () => {
             >
               Ongoing Assignment
             </p>
-            <div className="row math-assignment">
+            <div className="row math-assignment ">
               <div className="col-md-3">
                 <img
                   src={math}
@@ -209,7 +213,7 @@ const TeacherContent = () => {
                 />
               </div>
               <div
-                className="col-md-8"
+                className="col-md-8 "
                 style={{ marginLeft: "30px", marginTop: "20px" }}
               >
                 <h5>how to solve this Math</h5>
@@ -221,7 +225,7 @@ const TeacherContent = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-5 ">
             <div className="Pie-chart">
               <PieChart width={420} height={250}>
                 <Pie
@@ -246,7 +250,7 @@ const TeacherContent = () => {
           </div>
         </div>
       </div>
-      <div className="line-chart-section">
+      <div className="line-chart-section bg-white shadow">
         <div className="col-md-12 bar-chart">
           <BarChart
             width={830}

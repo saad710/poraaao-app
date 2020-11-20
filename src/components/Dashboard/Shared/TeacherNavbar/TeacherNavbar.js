@@ -13,8 +13,8 @@ import "./TeacherNavbar.css";
 
 const TeacherNavbar = () => {
   return (
-    <div className="header-nav">
-      <Navbar className="header" bg="light" expand="lg">
+    <div className="header-nav shadow">
+      <Navbar className="header " expand="lg">
         <Navbar.Brand href="home">
           <Link to="/">
             <img className="porao-logo" src={logo} alt="" />
