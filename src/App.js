@@ -4,6 +4,7 @@ import SignUpHome from "./components/Authentication/SignUpHome/SignUpHome";
 import TeacherLogin from "./components/Authentication/Teacher/TeacherLogin/TeacherLogin";
 import TeacherSignUp from "./components/Authentication/Teacher/TeacherSignUp/TeacherSignUp";
 import VerifyOtp from "./components/Authentication/VerifyOtp/VerifyOtp";
+import BidRequests from "./components/Dashboard/StudentDashboard/BidRequests/BidRequests";
 import CreateNewAssignment from "./components/Dashboard/StudentDashboard/CreateNewAssignment/CreateNewAssignment";
 import StudentDashboard from "./components/Dashboard/StudentDashboard/StudentDashboard/StudentDashboard";
 import TeacherDashboard from "./components/Dashboard/TeacherDashboard/TeacherDashboard/TeacherDashboard";
@@ -48,6 +49,9 @@ function App() {
         </Route>
         <Route path="/createNewAssignment">
           <CreateNewAssignment></CreateNewAssignment>
+        </Route>
+        <Route path="/bidRequests">
+          <BidRequests></BidRequests>
         </Route>
         <Route path="/verifyOtp">
           <VerifyOtp></VerifyOtp>

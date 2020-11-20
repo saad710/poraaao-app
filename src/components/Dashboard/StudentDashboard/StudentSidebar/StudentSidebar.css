@@ -24,3 +24,16 @@ a:active {
 .sidebar svg {
   margin-right: 5px;
 }
+
+.sidebar-link:hover {
+  color: #ff8a00 !important;
+}
+
+.sidebar-link:active {
+  color: #ff8a00 !important;
+  font-weight: 700 !important;
+}
+
+.active {
+  color: #ff8a00 !important;
+}

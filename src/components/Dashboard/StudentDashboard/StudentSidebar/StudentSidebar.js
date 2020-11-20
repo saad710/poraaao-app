@@ -1,6 +1,6 @@
 import React from "react";
 import "./StudentSidebar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTh } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,42 +9,70 @@ const StudentSidebar = () => {
     <div className="sidebar d-flex flex-column justify-content-between shadow col-md-2 py-5 px-4">
       <ul className="list-unstyled">
         <li>
-          <Link to="/studentDashboard">
+          <NavLink
+            activeClassName="active"
+            className="sidebar-link"
+            to="/studentDashboard"
+          >
             <FontAwesomeIcon icon={faTh} /> <span>Dashboard</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/createNewAssignment">
+          <NavLink
+            activeClassName="active"
+            className="sidebar-link"
+            to="/createNewAssignment"
+          >
             <FontAwesomeIcon icon={faTh} /> <span>Create New Assignment</span>
-          </Link>
+          </NavLink>
         </li>
         <div>
           <li>
-            <Link to="/myAssignments">
+            <NavLink
+              activeClassName="active"
+              className="sidebar-link"
+              to="/myAssignments"
+            >
               <FontAwesomeIcon icon={faTh} /> <span>My Assignments</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/bidRequests">
+            <NavLink
+              activeClassName="active"
+              className="sidebar-link"
+              to="/bidRequests"
+            >
               <FontAwesomeIcon icon={faTh} /> <span>Bid Requests</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/payments">
+            <NavLink
+              activeClassName="active"
+              className="sidebar-link"
+              to="/payments"
+            >
               <FontAwesomeIcon icon={faTh} /> <span>Payments</span>
-            </Link>
+            </NavLink>
           </li>
         </div>
         <div>
           <li>
-            <Link to="/studentdiscussions">
+            <NavLink
+              activeClassName="active"
+              className="sidebar-link"
+              to="/studentdiscussions"
+            >
               <FontAwesomeIcon icon={faTh} /> <span>Discussions</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/studentReview">
+            <NavLink
+              activeClassName="active"
+              className="sidebar-link"
+              to="/studentReview"
+            >
               <FontAwesomeIcon icon={faTh} /> <span>Reviews</span>
-            </Link>
+            </NavLink>
           </li>
         </div>
       </ul>
