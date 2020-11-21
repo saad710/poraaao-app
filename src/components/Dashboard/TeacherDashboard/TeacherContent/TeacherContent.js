@@ -4,7 +4,7 @@ import "./TeacherContent.css";
 import star from "../../../../resources/star.PNG";
 import check from "../../../../resources/check.png";
 import math from "../../../../resources/math.gif";
-import { PieChart, Pie, Sector, Cell } from "recharts";
+import { PieChart, Pie, Cell } from "recharts";
 import {
   BarChart,
   Bar,
