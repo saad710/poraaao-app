@@ -27,11 +27,13 @@ const SignUpHome = () => {
           </Link>
         </div>
         <div className="col-md-3">
+        <Link to="/studentSignup" style={{textDecoration:"none"}}>
           <div className="image-icon">
             <img className="user-icon" src={student} alt="" />
             <br />
             <h5 className="identity">Student</h5>
           </div>
+        </Link>
         </div>
         <div className="col-md-3"></div>
       </div>

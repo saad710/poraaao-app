@@ -1,0 +1,12 @@
+.new-card {
+  margin: 30px 0px;
+  padding: 0px 30px;
+}
+
+.card-subtitle {
+  font-weight: 600;
+}
+
+.card-footer-titles {
+  margin-top: 10px;
+}

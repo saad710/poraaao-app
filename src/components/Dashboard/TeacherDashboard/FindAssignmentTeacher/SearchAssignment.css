@@ -1,0 +1,30 @@
+.search-assignment {
+  width: 100%;
+  background-image: url("../../../../resources/Rectangle\ 92.png");
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.header_mid > input {
+  flex: 1;
+  border: none;
+}
+.header_mid > input:focus {
+  outline: none;
+}
+.header_inputbutton {
+  width: 35px !important;
+  color: white;
+}
+.search-input-assignment {
+  border: 1px solid #ff8a00;
+  border-radius: 30px;
+  width: 422px;
+  height: 40px;
+  margin-left: 30px;
+  font-family: Font Awesome 5 Brands !important;
+}
+.search-input-assignment::placeholder {
+  padding-left: 15px;
+  color: #ff8a00;
+  opacity: 1; /* Firefox */
+}
