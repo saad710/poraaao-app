@@ -2,6 +2,7 @@ import { Button } from "react-bootstrap";
 import React from "react";
 import { Card } from "react-bootstrap";
 import "./AssignmentCard.css";
+import { Link } from "react-router-dom";
 
 const AssignmentCard = (props) => {
   const { name, description, image, time, rating, price } = props.assignment;
@@ -29,6 +30,7 @@ const AssignmentCard = (props) => {
               >
                 <div className="card-subtitle"> {price} $</div>
                 <div className=" ml-auto">
+                <Link to="/bidDetails" style={{textDecoration: "none"}}>
                   <Button
                     variant="warning"
                     className="brand-btn"
@@ -36,6 +38,7 @@ const AssignmentCard = (props) => {
                   >
                     Bid Now!
                   </Button>
+                </Link>
                 </div>
               </div>
             </Card.Text>
