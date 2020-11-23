@@ -9,6 +9,7 @@ import TeacherNavbar from "../../Shared/TeacherNavbar/TeacherNavbar";
 import TeacherSidebar from "../TeacherSidebar/TeacherSidebar";
 import img from "../../../../resources/Ellipse 89.png";
 import Footer from "../../../Shared/Footer/Footer";
+import ProfileSidebar from "../../Shared/ProfileSidebar/ProfileSidebar";
 
 const TeacherReviews = () => {
   const [reviews, setReviews] = useState(fakeReviews);
@@ -18,9 +19,9 @@ const TeacherReviews = () => {
     <div id="reviews">
       <TeacherNavbar></TeacherNavbar>
       <div className="container-fluid row">
-        <TeacherSidebar></TeacherSidebar>
+        <ProfileSidebar></ProfileSidebar>
         <div
-          className="col-md-10  ml-auto shadow-sm ml-auto"
+          className="col-md-9  ml-auto shadow-sm ml-auto"
           style={{ padding: 60 }}
         >
           <h1>Ratings & Reviews</h1>
