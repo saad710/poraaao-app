@@ -65,11 +65,13 @@ const StudentLogin = () => {
                     </div>
                   </div>
                   <br />
+                  <Link to="/StudentPayment" style={{textDecoration:"none"}}>
                   <input
                     className="btn btn-warning log-in-btn"
                     type="submit"
                     value="Log In"
                   />
+                  </Link>
                 </form>
                 <br />
                 <div className="or">

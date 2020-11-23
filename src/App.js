@@ -11,6 +11,8 @@ import BidAssignment from "./components/Dashboard/TeacherDashboard/BidAssignment
 import BidDetails from "./components/Dashboard/TeacherDashboard/BidDetails/BidDetails";
 import CurrentBid from "./components/Dashboard/TeacherDashboard/CurrentBid/CurrentBid";
 import FindAssignmentTeacher from "./components/Dashboard/TeacherDashboard/FindAssignmentTeacher/FindAssignmentTeacher";
+import StudentPayment from "./components/Dashboard/TeacherDashboard/StudentDashboard/StudentSidebar/StudentPayment/StudentPayment";
+import StudentPaymentMethod from "./components/Dashboard/TeacherDashboard/StudentDashboard/StudentSidebar/StudentPayment/StudentPaymentMethod/StudentPaymentMethod";
 import TeacherDashboard from "./components/Dashboard/TeacherDashboard/TeacherDashboard/TeacherDashboard";
 import Home from "./components/Home/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
@@ -49,6 +51,9 @@ function App() {
         <Route path="/currentBid">
           <CurrentBid/>
         </Route>
+        <Route path="/studentPaymentMethod">
+          <StudentPaymentMethod/>
+        </Route>
         <Route exact path="/">
           <Home></Home>
         </Route>
@@ -57,6 +62,9 @@ function App() {
         </Route>
         <Route path="/studentLogin">
           <StudentLogin></StudentLogin>
+        </Route>
+        <Route path="/studentPayment">
+          <StudentPayment/>
         </Route>
         <Route path="/bidDetails">
           <BidDetails></BidDetails>
