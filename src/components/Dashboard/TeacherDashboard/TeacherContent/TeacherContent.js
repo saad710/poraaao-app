@@ -1,145 +1,7 @@
-import React from "react";
-import book from "../../../../resources/book.png";
-import "./TeacherContent.css";
-import star from "../../../../resources/star.PNG";
-import check from "../../../../resources/check.png";
-import math from "../../../../resources/math.gif";
-import { PieChart, Pie, Sector, Cell } from "recharts";
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-} from "recharts";
-
-const lineData = [
-  {
-    name: "1",
-    USD: 0,
-  },
-  {
-    name: "2",
-    USD: 0.1,
-  },
-  {
-    name: "3",
-    USD: 0.2,
-  },
-  {
-    name: "4",
-    USD: 0.2,
-  },
-  {
-    name: "5",
-    USD: 0.3,
-  },
-  {
-    name: "6",
-    USD: 0.4,
-  },
-  {
-    name: "7",
-    USD: 0.4,
-  },
-  {
-    name: "8",
-    USD: 0.3,
-  },
-  {
-    name: "9",
-    USD: 0.5,
-  },
-  {
-    name: "10",
-    USD: 0.6,
-  },
-  {
-    name: "11",
-    USD: 0.7,
-  },
-  {
-    name: "12",
-    USD: 0.7,
-  },
-  {
-    name: "13",
-    USD: 0.8,
-  },
-  {
-    name: "14",
-    USD: 0.9,
-  },
-  {
-    name: "15",
-    USD: 0.6,
-  },
-  {
-    name: "16",
-    USD: 0.6,
-  },
-  {
-    name: "17",
-    USD: 0.7,
-  },
-  {
-    name: "18",
-    USD: 0.4,
-  },
-  {
-    name: "19",
-    USD: 0.3,
-  },
-  {
-    name: "20",
-    USD: 0.4,
-  },
-  {
-    name: "21",
-    USD: 0.5,
-  },
-  {
-    name: "22",
-    USD: 0.6,
-  },
-  {
-    name: "23",
-    USD: 0.7,
-  },
-  {
-    name: "24",
-    USD: 0.4,
-  },
-  {
-    name: "25",
-    USD: 0.8,
-  },
-  {
-    name: "26",
-    USD: 0.7,
-  },
-  {
-    name: "27",
-    USD: 0.9,
-  },
-  {
-    name: "28",
-    USD: 0.8,
-  },
-  {
-    name: "29",
-    USD: 0.9,
-  },
-  {
-    name: "30",
-    USD: 1,
-  },
-];
-
-const data = [{ name: "Group A", value: 400 }];
-const COLORS = ["#ff8a00"];
+import React from 'react';
+import BarRechartSection from './BarRechartSection';
+import BidCard from './BidCard';
+import PieRechartSection from './PieRechartSection';
 
 const TeacherContent = () => {
   const containerStyle = {
@@ -148,6 +10,11 @@ const TeacherContent = () => {
   };
   return (
     <div className="teacher-content">
+
+      <BidCard/>
+      <PieRechartSection/>
+      <BarRechartSection/>
+
       <div className="assignment-section" style={{ marginLeft: "30px" }}>
         <div className="row">
           <div
@@ -272,6 +139,7 @@ const TeacherContent = () => {
           </BarChart>
         </div>
       </div>
+
     </div>
   );
 };

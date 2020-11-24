@@ -1,0 +1,23 @@
+.main_content {
+  width: 77%;
+  background-color: #ecebeb;
+  padding-top: 10px;
+  margin-bottom: 30px;
+  /* padding-bottom: 300px; */
+}
+.skills {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-left: 8px;
+  border: 1px solid #212121;
+  color: black;
+}
+.skills:hover {
+  background-color: white;
+  color: black;
+}
+.details_bid {
+  margin-top: 40px;
+  box-shadow: 5px 5px 10px grey;
+  padding: 10px 20px;
+}
