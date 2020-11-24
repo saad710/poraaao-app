@@ -4,10 +4,6 @@ import NavBar from "../../Shared/NavBar/NavBar";
 import Copyright from "../Copyright/Copyright";
 import FeatureBanner from "../FeatureBanner/FeatureBanner";
 
-
-
-import Footer from "../../Shared/Footer/Footer";
-
 import HighValueAssignment from "../HighValueAssignment/HighValueAssignment";
 import InfoBanner from "../InfoBanner/InfoBanner";
 import LongTimeAssignment from "../LongTimeAssignment/LongTimeAssignment";
@@ -51,7 +47,7 @@ const Home = () => {
         <SuccessStoryBanner></SuccessStoryBanner>
       </div>
       <div style={{ backgroundColor: "#212121" }}>
-        <Footer/>
+        <Footer />
       </div>
       <div style={{ backgroundColor: "#000000" }}>
         <Copyright></Copyright>

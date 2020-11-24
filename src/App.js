@@ -28,7 +28,7 @@ import NotFound from "./components/NotFound/NotFound";
 function App() {
   return (
     <Router>
-      <Switch> 
+      <Switch>
         <Route path="/home">
           <Home></Home>
         </Route>
@@ -65,17 +65,17 @@ function App() {
         <Route path="/verifyOtp">
           <VerifyOtp></VerifyOtp>
         </Route>
-        <Route path="/findAssignment">
+        <Route path="/findAssignments">
           <FindAssignmentTeacher></FindAssignmentTeacher>
         </Route>
-        <Route path="/bidAssignment">
+        <Route path="/bidAssignments">
           <BidAssignment></BidAssignment>
         </Route>
         <Route path="/currentBid">
-          <CurrentBid/>
+          <CurrentBid />
         </Route>
-        <Route path="/studentPaymentMethod">
-          <StudentPaymentMethod/>
+        <Route path="/studentPayment">
+          <StudentPaymentMethod />
         </Route>
         <Route exact path="/">
           <Home></Home>
@@ -87,7 +87,7 @@ function App() {
           <StudentLogin></StudentLogin>
         </Route>
         <Route path="/studentPayment">
-          <StudentPayment/>
+          <StudentPayment />
         </Route>
         <Route path="/bidDetails">
           <BidDetails></BidDetails>

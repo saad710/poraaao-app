@@ -49,7 +49,7 @@ const StudentSidebar = () => {
             <NavLink
               activeClassName="active"
               className="sidebar-link"
-              to="/payments"
+              to="/studentPayment"
             >
               <FontAwesomeIcon icon={faTh} /> <span>Payments</span>
             </NavLink>
