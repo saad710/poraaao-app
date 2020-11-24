@@ -1,0 +1,37 @@
+.btn-cart {
+  background-color: #06b26b !important;
+  border: none !important;
+  border-radius: 6px !important;
+}
+.btn-cart:hover {
+  background-color: #148053 !important;
+}
+
+.btn-quit {
+  background-color: #f5c01e !important;
+  border: none !important;
+  border-radius: 6px !important;
+}
+
+.btn-quit:hover {
+  background-color: #b88d0f !important;
+}
+
+.thead-bid-requests {
+  background-color: #ff8a00 !important;
+}
+
+/* table.table-bordered {
+  border: 1px solid blue;
+  margin-top: 20px;
+} */
+/* table.table-bordered > thead > tr > th {
+  border: 1px solid blue;
+} */
+table > tbody > tr > td {
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+}
+.table tbody tr > td {
+  background-color: #f0f0f0;
+}

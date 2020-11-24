@@ -1,18 +1,13 @@
-.teacher-content {
-  width: 75%;
-}
 .bid-assignment {
   margin-left: 50px;
   margin-top: 20px;
   height: 140px;
-  box-shadow: 5px 10px 20px silver;
 }
 .pie-chart-section {
   width: 90%;
   /* height: 290px; */
   margin-left: 60px;
   margin-top: 50px;
-  box-shadow: 10px 10px 20px silver;
 }
 .math-assignment-video {
   max-height: 100%;
@@ -30,6 +25,11 @@
   width: 90%;
 }
 .bar-chart {
+
   box-shadow: 5px 5px 10px silver;
   margin-bottom: 30px;
+
+  width: 90%;
+  height: 100%;
+
 }

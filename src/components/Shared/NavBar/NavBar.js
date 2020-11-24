@@ -74,7 +74,12 @@ const NavBar = () => {
             </div>
             <div className="header-end">
               <Link className="btn-header" to="/teacherDashboard">
-                Dashboard
+                Teacher
+              </Link>
+            </div>
+            <div className="header-end">
+              <Link className="btn-header" to="/studentDashboard">
+                Student
               </Link>
             </div>
           </div>

@@ -13,8 +13,8 @@ import "./TeacherNavbar.css";
 
 const TeacherNavbar = () => {
   return (
-    <div className="header-nav">
-      <Navbar className="header" bg="light" expand="lg">
+    <div className="header-nav shadow">
+      <Navbar className="header " expand="lg">
         <Navbar.Brand href="home">
           <Link to="/">
             <img className="porao-logo" src={logo} alt="" />
@@ -62,20 +62,22 @@ const TeacherNavbar = () => {
               />
             </div>
           </Nav>
-          <div className="row right-header">
-            <div className="header-end">
+          <div className="row d-flex justify-content-around ">
+            <div className="col">
               <NotificationsNoneOutlinedIcon
                 className="notification-icon"
                 style={{ color: "#ff8a00" }}
               />
             </div>
-            <div className="header-end">
+
+            <div className="col">
               <ShoppingCartOutlinedIcon
                 className="cart-icon"
                 style={{ color: "#ff8a00" }}
               />
             </div>
-            <div className="header-end">
+
+            <div className="col">
               <AccountCircleIcon
                 className="profile-icon"
                 style={{ color: "#ff8a00" }}

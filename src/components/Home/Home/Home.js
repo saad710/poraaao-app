@@ -4,6 +4,10 @@ import NavBar from "../../Shared/NavBar/NavBar";
 import Copyright from "../Copyright/Copyright";
 import FeatureBanner from "../FeatureBanner/FeatureBanner";
 
+
+
+import Footer from "../../Shared/Footer/Footer";
+
 import HighValueAssignment from "../HighValueAssignment/HighValueAssignment";
 import InfoBanner from "../InfoBanner/InfoBanner";
 import LongTimeAssignment from "../LongTimeAssignment/LongTimeAssignment";

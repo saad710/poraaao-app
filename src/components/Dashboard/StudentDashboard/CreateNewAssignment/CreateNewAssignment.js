@@ -1,22 +1,23 @@
 import React from "react";
 import Footer from "../../../Shared/Footer/Footer";
-import TeacherContent from "../TeacherContent/TeacherContent";
 import TeacherNavbar from "../../Shared/TeacherNavbar/TeacherNavbar";
-import TeacherSidebar from "../TeacherSidebar/TeacherSidebar";
+import NewAssignmentContent from "../NewAssignmentContent/NewAssignmentContent";
+import StudentSidebar from "../StudentSidebar/StudentSidebar";
+import "./CreateNewAssignment.css";
 
-const TeacherDashboard = () => {
+const CreateNewAssignment = () => {
   const containerStyle = {
     backgroundColor: "#F4F7FC",
     border: "none",
+    overflow: "hidden",
   };
   return (
     <>
       <TeacherNavbar></TeacherNavbar>
-
       <div style={containerStyle} className="container-fluid row">
-        <TeacherSidebar></TeacherSidebar>
-        <div className="col-md-10 p-4 pr-5 ml-auto">
-          <TeacherContent></TeacherContent>
+        <StudentSidebar></StudentSidebar>
+        <div className="col-md-10 p-4 ml-auto">
+          <NewAssignmentContent></NewAssignmentContent>
         </div>
       </div>
       <div style={{ backgroundColor: "#212121" }}>
@@ -26,4 +27,4 @@ const TeacherDashboard = () => {
   );
 };
 
-export default TeacherDashboard;
+export default CreateNewAssignment;
